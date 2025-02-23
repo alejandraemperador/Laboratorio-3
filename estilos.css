@@ -1,0 +1,254 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background: white;
+    margin: 50px;
+    text-align: justify;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
+
+.header ul li::first-letter {
+    font-weight: bold;
+}
+
+/* AQUI EMPIEZA PROFILE */
+.profile-container {
+    display: flex;
+}
+
+#profile {
+    border-bottom: 3px solid #aeaeae;
+}
+
+.profile {
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+}
+
+.profile-element {
+    padding: 25px;
+    width: 80%;
+}
+
+.profile-elementname {
+    padding-left: 25px; /* esto es la configuracion de todo el nombre con carrera */
+}
+
+h1 {
+    font-size: 50px; /* esto es la configuracion de ALEJA EMPERADOR */
+    font-family: Helvetica, sans-serif;
+    margin: 0px;
+} 
+
+.namecareer{
+    font-size: 22px; /* esto es la configuracion del nombre de la carrera cursada */
+    font-family: Helvetica, sans-serif;
+    background-color:#FFD2AB;
+    font-weight: bold;
+    padding: 5px 10px; /* espacio del cuadro de texto */
+    margin-top: 5px;
+}
+
+/* AQUI EMPIEZA EDUCATION */
+
+#education {
+    border-bottom: 3px solid #aeaeae;
+}
+
+.education {
+    background-color: white;
+    width: 100%;
+    padding-left: 50px; /* espacio del lado izquierdo despues de la margen */
+    padding-right: 50px; /* espacio del lado derecho */
+}
+
+.education-container {
+    display: flex; /* sus elementos hijos se organizan automáticamente en una fila o columna */
+    background-color: white;
+}
+
+.education-element {
+    padding: 25px 25px 25px 0px;
+    width: 50%;
+}
+
+.borde {
+    border-left: 3px solid #aeaeae;
+    padding-left: 25px;
+}
+
+/* AQUI EMPIEZA EXPERIENCE */
+#experience {
+    border-bottom: 3px solid #aeaeae;
+}
+
+.experience {
+    background-color: white;
+    width: 100%;
+    padding-left: 50px; /* espacio del lado izquierdo despues de la margen */
+    padding-right: 50px; /* espacio del lado derecho */
+}
+
+.experience-container {
+    display: flex; /* sus elementos hijos se organizan automáticamente en una fila o columna */
+    background-color: white;
+}
+
+.experience-element {
+    padding: 25px 25px 25px 0px;
+    width: 50%;
+}
+
+.borde {
+    border-left: 3px solid #aeaeae;
+    padding-left: 25px;
+}
+
+/* AQUI EMPIEZA SKILLS */
+#skills {
+    border-bottom: 3px solid #aeaeae;
+}
+
+.skills {
+    background-color: white;
+    width: 100%;
+    padding: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between; /* Espacia las columnas */
+    background-color: white;
+}
+
+.skills-element {
+    padding: 25px 25px 25px 0px;
+    width: 50%; /* Ajuste para que no choquen las columnas */
+}
+
+.borde {
+    border-left: 3px solid #aeaeae;
+    padding-left: 25px;
+}
+
+.bar {
+    width: 100%; /* Ocupará el ancho completo del contenedor */
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    background-color: #f4a261; /* Color de la barra */
+    border-radius: 0px;
+}
+
+/* AQUI EMPIEZA PROJECTS */
+#projects {
+    border-bottom: 3px solid #aeaeae;
+}
+
+.projects {
+    background-color: white;
+    width: 100%;
+    padding-left: 50px; /* espacio del lado izquierdo despues de la margen */
+    padding-right: 50px; /* espacio del lado derecho */
+}
+
+.project-container {
+    display: flex; /* sus elementos hijos se organizan automáticamente en una fila o columna */
+    background-color: white;
+}
+
+.project-element {
+    padding: 25px 25px 25px 0px;
+    width: 50%;
+}
+
+.borde {
+    border-left: 3px solid #aeaeae;
+    padding-left: 25px;
+}
+
+/* AQUI EMPIEZA LANGUAGES */
+
+.languages-certification {
+    background-color: white;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.languages-certification-container {
+    display: flex; 
+    justify-content: space-between; /* Separa las columnas */
+    background-color: white;
+}
+
+.languages-element, .certification-element {
+    width: 50%; /* Para que ambas columnas se ajusten bien */
+}
+
+/* AQUI EMPIEZA CERTIFICATION*/
+
+.certification-element {
+    width: 50%;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-left: 3px solid #aeaeae;
+}
+
+
+.parrafos-certification {
+    display: flex; 
+    justify-content: space-between; /* Espacia las columnas */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.parrafo-container {
+    width: 50%; /* los parrafos ocupan la mitad */
+    box-sizing: border-box; /* Evita que el padding afecte el ancho */
+    background-color: white;
+    padding: 0px;
+}
+
+.parrafo-container2 {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 0px;
+}
+
+.borde {
+    border-left: 3px solid #aeaeae;
+    padding-left: 25px;
+}
+
+
+/* AQUI SE DESARROLLO LAS BARRAS DE LENGUAJE */
+.bar {
+    width: 90%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    background-color: #f4a261; /* Color de la barra */
+    border-radius: 0px;
+}
+
+/* AQUI EMPIEZA HOBBIES */
