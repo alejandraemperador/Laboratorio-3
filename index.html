@@ -8,14 +8,18 @@
 
 <body>
     <div class="container">
-        <div class="header">
-                <ul> 
-                    <li> P: +57 312 281 8846 </li>
-                    <li> E: alejandraemperador@gmail.com </li>
-                    <li> A: Carrera 4 # 4-45, Cali - Colombia </li>
-                    <li> W: emperador.com </li>
-                </ul>
-        </div>
+        <section id="header">
+            <div class="header-container">
+                <div class="header">
+                    <ul> 
+                        <li> P: +57 312 281 8846 </li>
+                        <li> E: alejandraemperador@gmail.com </li>
+                        <li> A: Carrera 4 # 4-45, Cali - Colombia </li>
+                        <li> W: emperador.com </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     
         <section id="profile">
         <div class="profile">
@@ -100,26 +104,38 @@
                 <div class="skills-container">
                     <!-- Primera columna -->
                     <div class="skills-element">
-                        <p>Python</p>
-                        <div class="bar"><div class="fill" style="width: 85%;"></div></div>
-        
-                        <p>JavaScript</p>
-                        <div class="bar"><div class="fill" style="width: 80%;"></div></div>
-        
-                        <p>C++</p>
-                        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        <div class="skill">
+                            <p>Python</p>
+                            <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                        </div>
+                    
+                        <div class="skill">
+                            <p>JavaScript</p>
+                            <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                        </div>
+                    
+                        <div class="skill">
+                            <p>C++</p>
+                            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        </div>
                     </div>
 
                      <!-- Segunda columna -->
                     <div class="skills-element borde">
-                        <p>Ruby</p>
-                        <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+                        <div class="skill">
+                            <p>Ruby</p>
+                            <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+                        </div>
 
-                        <p>C/Swift</p>
-                        <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                        <div class="skill">
+                            <p>C/Swift</p>
+                            <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                        </div>
 
-                        <p>SQL</p>
-                        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        <div class="skill">
+                            <p>SQL</p>
+                            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,7 +178,7 @@
 
         </div>
         </section>
-
+        <br>
         <section id="languages-certification">
             <div class="languages-certification">
                 <div class="languages-certification-container">
@@ -170,20 +186,31 @@
                     <!-- Columna de idiomas -->
                     <div class="languages-element">
                         <h2>LANGUAGES</h2>
-                        <p>English</p>
-                        <div class="bar"><div class="fill" style="width: 85%;"></div></div>
-        
-                        <p>German</p>
-                        <div class="bar"><div class="fill" style="width: 80%;"></div></div>
-        
-                        <p>French</p>
-                        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
-        
-                        <p>Spanish</p>
-                        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
-        
-                        <p>Turkish</p>
-                        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        
+                        <div class="language"> 
+                            <p>English</p>
+                            <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                        </div>
+
+                        <div class="language"> 
+                            <p>German</p>
+                            <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                        </div>
+
+                        <div class="language"> 
+                            <p>French</p>
+                            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        </div>
+
+                        <div class="language"> 
+                            <p>Spanish</p>
+                            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        </div>
+
+                        <div class="language"> 
+                            <p>Turkish</p>
+                            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                        </div>
                     </div>
         
                     <!-- Columna de certificaciones -->
@@ -212,10 +239,10 @@
         </section>
 
         <section id="hobbies">
-            <h2>HOBBIES</h2>
+            <h2 class="palabrahobbie">HOBBIES</h2>
             <div class="hobbies-container">
                 <ul class="horizontal-list"> 
-                    <li> <div class="icon-circle"><i class="fa fa-music"></i></div> <p>Music</p> </li>
+                    <li> <div class="icon-circle"><i class="fa fa-headphones"></i></div> <p>Music</p> </li>
                     <li> <div class="icon-circle"><i class="fa fa-leaf"></i></div> <p>Yoga</p> </li>
                     <li> <div class="icon-circle"><i class="fa fa-cutlery"></i></div> <p>Cooking</p> </li>
                     <li> <div class="icon-circle"><i class="fa fa-code"></i></div> <p>Coding</p> </li>

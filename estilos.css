@@ -11,6 +11,8 @@ body {
     justify-content: space-between;
     padding: 25px;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header ul li::first-letter {
@@ -20,6 +22,8 @@ body {
 /* AQUI EMPIEZA PROFILE */
 .profile-container {
     display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Distribuye el espacio */
 }
 
 #profile {
@@ -83,6 +87,7 @@ h1 {
 .borde {
     border-left: 3px solid #aeaeae;
     padding-left: 25px;
+    margin-left: 20px;
 }
 
 /* AQUI EMPIEZA EXPERIENCE */
@@ -111,6 +116,7 @@ h1 {
 .borde {
     border-left: 3px solid #aeaeae;
     padding-left: 25px;
+    margin-left: 20px;
 }
 
 /* AQUI EMPIEZA SKILLS */
@@ -118,11 +124,23 @@ h1 {
     border-bottom: 3px solid #aeaeae;
 }
 
+.skill {
+    display: flex;
+    align-items: center; /* Alinea el texto y la barra en la misma línea */
+    gap: 15px; /* Espacio entre el texto y la barra */
+    margin: 0px;
+}
+
+.skill p {
+    text-align: left; /* Asegura alineación derecha */
+}
+
 .skills {
     background-color: white;
     width: 100%;
     padding: 50px;
 }
+
 
 .skills-container {
     display: flex;
@@ -138,28 +156,26 @@ h1 {
 .borde {
     border-left: 3px solid #aeaeae;
     padding-left: 25px;
+    margin-left: 20px;
 }
 
+/* AQUI SE DESARROLLÓ LAS BARRAS DE LENGUAJE */
+
 .bar {
-    width: 100%; /* Ocupará el ancho completo del contenedor */
-    height: 10px;
+    flex-grow: 1; /* Hace que la barra ocupe el espacio restante */
+    height: 20px;
     background-color: #ddd;
-    border-radius: 0px;
-    margin-bottom: 10px;
     position: relative;
+    margin: 20px;
 }
 
 .fill {
     height: 100%;
-    background-color: #f4a261; /* Color de la barra */
+    background-color: #000000; /* Color de la barra */
     border-radius: 0px;
 }
 
 /* AQUI EMPIEZA PROJECTS */
-#projects {
-    border-bottom: 3px solid #aeaeae;
-    padding: 25px
-}
 
 .projects {
     background-color: white;
@@ -181,21 +197,38 @@ h1 {
 .borde {
     border-left: 3px solid #aeaeae;
     padding-left: 25px;
+    margin-left: 20px;
 }
 
 /* AQUI EMPIEZA LANGUAGES */
 
+#languages-certification  {
+    border-top: 3px solid #aeaeae;
+    padding: 25px
+}
+
+.language {
+    display: flex;
+    align-items: center; /* Alinea el texto y la barra en la misma línea */
+    gap: 15px; /* Espacio entre el texto y la barra */
+    margin: 0px;
+}
+
+.languaje p {
+    text-align: left; /* Asegura alineación derecha */
+}
+
 .languages-certification {
     background-color: white;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .languages-certification-container {
     display: flex;
     justify-content: center; /* Centra los elementos */
-    gap: 50px; /* Espacio entre los dos */
+    gap: 90px; /* Espacio entre los dos */
     background-color: white;
 }
 
@@ -203,12 +236,28 @@ h1 {
     width: 50%; /* Cada uno ocupa la mitad */
 }
 
+
+/* AQUI SE DESARROLLÓ LAS BARRAS DE LENGUAJE */
+.bar {
+    flex-grow: 1; /* Hace que la barra ocupe el espacio restante */
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+    margin: 20px;
+}
+
+.fill {
+    height: 100%;
+    background-color: #000000; /* Color de la barra */
+    border-radius: 0px;
+}
+
 /* AQUI EMPIEZA CERTIFICATION*/
 
 .certification-element {
     width: 50%;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 55px;
+    padding-right: 55px;
     border-left: 3px solid #aeaeae;
 }
 
@@ -223,49 +272,36 @@ h1 {
     width: 50%; /* los parrafos ocupan la mitad */
     box-sizing: border-box; /* Evita que el padding afecte el ancho */
     background-color: white;
-    padding: 0px;
+    padding: 10px;
 }
 
 .parrafo-container2 {
     width: 50%;
     box-sizing: border-box;
     background-color: white;
-    padding: 0px;
+    padding: 10px;
 }
 
 .borde {
     border-left: 3px solid #aeaeae;
     padding-left: 25px;
+    margin-left: 0px;
 }
 
 
-/* AQUI SE DESARROLLO LAS BARRAS DE LENGUAJE */
-.bar {
-    width: 90%;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 0px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.fill {
-    height: 100%;
-    background-color: #f4a261; /* Color de la barra */
-    border-radius: 0px;
-}
 
 /* AQUI EMPIEZA HOBBIES */
 
 #hobbies {
     background-color: white;
     width: 100%;
-    padding-left: 50px; 
-    padding-right: 50px; 
     margin-top: 50px; 
     border-top: 3px solid #aeaeae;
 }
 
+.palabrahobbie {
+    padding-left: 50px;
+}
 
 .hobbies-container {
     text-align: center;
@@ -277,7 +313,6 @@ h1 {
     display: flex; /* Lista en línea */
     justify-content: space-between;
     list-style: none;
-    padding: 0;
     gap: 30px; /* Espacio entre elementos */
 }
 
@@ -319,4 +354,12 @@ h1 {
 .icon-circle:hover {
     background-color: #ddd; /* Efecto hover para los iconos */
     transform: scale(1.1);
+}
+
+section {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
